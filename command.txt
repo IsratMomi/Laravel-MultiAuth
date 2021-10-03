@@ -1,0 +1,14 @@
+laravel new laravel_multi_role_authentication
+composer require laravel/ui
+php artisan ui vue --auth
+npm install && npm run dev
+
+
+for multi role premission
+https://spatie.be/docs/laravel-permission/v3/installation-laravel 
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+ php artisan optimize:clear
+ # or
+ php artisan config:clear
+ php artisan migrate
